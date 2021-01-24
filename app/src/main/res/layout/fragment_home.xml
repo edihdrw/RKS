@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Home">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#efefef"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingVertical="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/logo2" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+                    android:layout_marginStart="150dp"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:src="@drawable/edi"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingVertical="5dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingStart="12dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/bg_btn_bac"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginRight="30dp"
+                    android:hint="Search.."/>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="-60dp"
+                    android:backgroundTint="#000000"
+                    android:background="@drawable/ic_search"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Terlaris"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="30dp">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvMainData"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgMainData11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/cpug1"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:maxHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMainData11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="CPU G-1"
+                                    android:layout_below="@+id/imgMainData11"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData11"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_arrow"
+                                    app:tint="@color/colorPrimary" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvMainData12"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgMainData12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:src="@drawable/corsair"
+                                    android:layout_margin="5dp"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:maxHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMainData12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData12"
+                                    android:text="Cor.K57"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData12"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_arrow"
+                                    app:tint="@color/colorPrimary" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvMainData13"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgMainData13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/havit"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:maxHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMainData13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="HV-H-1"
+                                    android:layout_below="@+id/imgMainData13"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData13"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_arrow"
+                                    app:tint="@color/colorPrimary" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="30dp">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvMainData21"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgMainData21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ergonomis_1"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:maxHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMainData21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData21"
+                                    android:layout_margin="8dp"
+                                    android:text="ERG.1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData21"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_arrow"
+                                    app:tint="@color/colorPrimary" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvMainData22"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgMainData22"
+                                    android:src="@drawable/onikuma1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:maxHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMainData22"
+                                    android:layout_width="wrap_content"
+                                    android:text="ONIKU"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData22"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData22"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_arrow"
+                                    app:tint="@color/colorPrimary" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cvMainData23"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="3dp">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp">
+
+                                <ImageView
+                                    android:id="@+id/imgMainData23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/kation"
+                                    android:adjustViewBounds="true"
+                                    android:cropToPadding="true"
+                                    android:maxHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/tvMainData23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="KATION"
+                                    android:layout_below="@+id/imgMainData23"
+                                    android:layout_margin="8dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/imgMainData23"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_arrow"
+                                    app:tint="@color/colorPrimary" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="10dp"
+                android:text="Berita"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBerita1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/tvBerita1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="BREAKING NEWS Rekor Terbaru Corona di Indonesia 7 Januari 2021 Capai 9.321, Total Kasus 797.723"
+                            android:layout_margin="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBerita2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/tvBerita2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kabar Terbaru soal Fatwa MUI Terkait Vaksinasi Covid-19 Buatan Sinovac"
+                            android:layout_margin="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBerita3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/tvBerita3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kabar Terkini Skuat Juventus Jelang Lawan AC Milan, Dua Pemain Absen"
+                            android:layout_margin="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvBerita4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="3dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/tvBerita4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inilah kabar terbaru tentang Jack Ma, bos Alibaba yang dikabarkan hilang"
+                            android:layout_margin="8dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

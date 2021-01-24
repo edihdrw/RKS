@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <TextView
+        android:id="@+id/SelamatDatang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELAMAT DATANG"
+        android:textColor="#13A89E"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+    <ImageView
+        android:id="@+id/imgView_BS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/hallo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Hallo"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#13A89E"
+        android:layout_marginHorizontal="30dp"/>
+    <TextView
+        android:id="@+id/hallo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Aplikasi yang bias membantu kamu untuk mencari
+dan menemukan barang gaming yang kamu ingin
+kan, kapanpun dan dimanapun."
+        android:textSize="11dp"
+        android:layout_marginRight="110dp"
+        android:textColor="#8B8E8E"
+        android:layout_marginLeft="30dp"/>
+
+    <EditText
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn"
+        android:hint="Masukan Username"
+        android:drawableStart="@drawable/ic_person"
+        android:paddingStart="12dp"
+        android:drawablePadding="12dp"/>
+    <EditText
+        android:id="@+id/pw_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_btn"
+        android:hint="Masukan Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_lock"
+        android:paddingStart="12dp"
+        android:drawablePadding="12dp"/>
+    <TextView
+        android:id="@+id/btn_login_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#13A89E"
+        android:text="LOGIN"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginVertical="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum mempunyai akun?"
+            android:textSize="8dp"
+            android:layout_marginLeft="130dp"/>
+        <TextView
+            android:id="@+id/btn_register_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:textColor="#13A89E"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:textSize="13dp"/>
+    </LinearLayout>
+
+</LinearLayout>
