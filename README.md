@@ -1,6 +1,7 @@
 <b>UAS RKS</b>
 
 Pada aplikasi KunciGame ini saya buat menggunakan android studio untuk membuat FrontEnd nya dan juga menggunakan data fake. Aplikasi yang saya bangun ini mengikuti rancangan sistem wireframe, workflow, dan dokumentasi kebutuhan yg telah saya buat sebelum UAS. Berikut Link folder UTS sebelumnya yg berisi workflow, wireframe, dan dokumentasi kebutuhan :
+<br>
 https://drive.google.com/drive/folders/1mReEqJmHcXzgHyWj00Dfnm4-niluTbfd?usp=sharing
 
 Berikut file file yg digunakan dan dimasukan pada folder berikut :
