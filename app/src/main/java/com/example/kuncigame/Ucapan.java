@@ -7,21 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class Register extends AppCompatActivity {
-
-    TextView login,register;
+public class Ucapan extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
-        login =(TextView) findViewById(R.id.btn_login_regis);
-        register =(TextView) findViewById(R.id.btn_register_regis);
+        setContentView(R.layout.activity_ucapan);
+        TextView ucapan = (TextView) findViewById(R.id.kembali);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        ucapan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent loginIntent = new Intent(Register.this, Login.class);
+                Intent loginIntent = new Intent(Ucapan.this, Login.class);
                 startActivity(loginIntent);
             }
         });
