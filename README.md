@@ -68,4 +68,7 @@ E. Manifest :
 
 - AndroidManifest.xml
 F. Berikut Video saat saya Running di Android Studio :
-https://user-images.githubusercontent.com/49123187/106411279-76af0700-6477-11eb-979f-cecf3a1f6f27.mp4
+
+`[](`[]([](https://user-images.githubusercontent.com/49123187/106411279-76af0700-6477-11eb-979f-cecf3a1f6f27.mp4`)`
+))
+
